@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>GreenConnect Electricals | Professional Electrical Services</title>
+  <title>GreenConnect Electricals | Connecting You to Quality</title>
 
-  <meta name="description" content="GreenConnect Electricals provides professional electrical installation, repairs, maintenance, electric fencing, generator services, satellite installation and air conditioning services in Sunyani and surrounding areas.">
+  <meta name="description" content="GreenConnect Electricals provides professional electrical wiring, AC installation, electric fencing, satellite installation, industrial generators, electrical panels and equipment supply in Ghana.">
 
   <style>
     * {
@@ -17,260 +17,601 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.6;
       color: #222;
-      background: #f7f9f7;
+      background: #fff;
     }
 
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
     header {
-      background: #0b5d1e;
-      color: white;
-      padding: 18px 7%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid #eee;
+    }
+
+    .navbar {
+      max-width: 1200px;
+      margin: auto;
+      padding: 16px 25px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
     }
 
     .logo {
-      font-size: 22px;
-      font-weight: bold;
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: 1px;
     }
 
     .logo span {
-      color: #9cff57;
+      color: #159447;
+    }
+
+    .tagline-small {
+      font-size: 10px;
+      color: #777;
+      letter-spacing: 1px;
+      margin-top: -3px;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+      align-items: center;
     }
 
     nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 18px;
       font-size: 14px;
+      font-weight: 600;
+      color: #333;
+      transition: 0.3s;
     }
 
     nav a:hover {
-      color: #9cff57;
+      color: #159447;
     }
 
+    .nav-btn {
+      background: #159447;
+      color: white !important;
+      padding: 10px 18px;
+      border-radius: 5px;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
     .hero {
-      min-height: 90vh;
-      background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
-      url("https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1600&q=80");
-      background-size: cover;
-      background-position: center;
+      min-height: 100vh;
+      padding: 150px 25px 80px;
+      background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+        url("images/hero.jpg") center/cover no-repeat;
       display: flex;
       align-items: center;
-      padding: 60px 7%;
-      color: white;
     }
 
     .hero-content {
-      max-width: 700px;
+      max-width: 1200px;
+      width: 100%;
+      margin: auto;
+      color: white;
+    }
+
+    .hero-label {
+      color: #62d98b;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
     }
 
     .hero h1 {
-      font-size: clamp(40px, 8vw, 70px);
-      line-height: 1.1;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.05;
+      max-width: 850px;
       margin-bottom: 20px;
     }
 
     .hero h1 span {
-      color: #9cff57;
+      color: #62d98b;
     }
 
     .hero p {
-      font-size: 19px;
+      max-width: 650px;
+      font-size: 18px;
+      color: #eee;
       margin-bottom: 30px;
-      max-width: 600px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
     }
 
     .btn {
       display: inline-block;
-      padding: 13px 22px;
-      border-radius: 6px;
-      text-decoration: none;
+      padding: 14px 25px;
+      border-radius: 5px;
       font-weight: bold;
-      margin-right: 8px;
-      margin-bottom: 10px;
+      transition: 0.3s;
     }
 
     .btn-primary {
-      background: #0b8f2e;
+      background: #159447;
       color: white;
     }
 
     .btn-primary:hover {
-      background: #087325;
+      background: #0e7335;
+      transform: translateY(-2px);
     }
 
-    .btn-whatsapp {
-      background: #25d366;
+    .btn-outline {
+      border: 1px solid white;
       color: white;
     }
 
+    .btn-outline:hover {
+      background: white;
+      color: #222;
+    }
+
+    /* =========================
+       INTRO
+    ========================= */
+
     section {
-      padding: 70px 7%;
+      padding: 90px 25px;
     }
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 45px;
+    .container {
+      max-width: 1200px;
+      margin: auto;
     }
 
-    .section-title h2 {
-      font-size: 35px;
-      color: #0b5d1e;
+    .section-label {
+      color: #159447;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
       margin-bottom: 10px;
     }
 
-    .section-title p {
-      color: #666;
+    .section-title {
+      font-size: clamp(30px, 5vw, 46px);
+      line-height: 1.15;
+      margin-bottom: 20px;
     }
 
-    .about {
+    .intro {
+      background: #f7faf8;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .intro-text p {
+      color: #666;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    .intro-box {
+      background: white;
+      padding: 40px;
+      border-left: 5px solid #159447;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.07);
+    }
+
+    .intro-box h3 {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .services {
       background: white;
     }
 
-    .about-content {
-      max-width: 850px;
-      margin: auto;
-      text-align: center;
-      font-size: 17px;
+    .section-heading {
+      max-width: 700px;
+      margin-bottom: 45px;
     }
 
-    .services {
-      background: #f1f5f1;
-    }
-
-    .service-grid {
+    .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 22px;
     }
 
     .service-card {
+      border: 1px solid #eee;
+      padding: 30px;
+      transition: 0.3s;
       background: white;
-      padding: 28px;
-      border-radius: 10px;
-      box-shadow: 0 5px 18px rgba(0,0,0,.08);
-      transition: .3s;
     }
 
     .service-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-6px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+      border-color: #159447;
     }
 
-    .service-icon {
-      font-size: 38px;
-      margin-bottom: 12px;
+    .service-number {
+      color: #159447;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 18px;
     }
 
     .service-card h3 {
-      color: #0b5d1e;
       margin-bottom: 10px;
+      font-size: 20px;
     }
 
-    .why {
-      background: white;
+    .service-card p {
+      color: #666;
+      font-size: 14px;
     }
 
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
-      max-width: 1000px;
-      margin: auto;
-    }
+    /* =========================
+       INDUSTRIAL SOLUTIONS
+    ========================= */
 
-    .why-card {
-      text-align: center;
-      padding: 25px;
-    }
-
-    .why-card h3 {
-      color: #0b5d1e;
-      margin: 10px 0;
-    }
-
-    .contact {
-      background: #0b5d1e;
+    .industrial {
+      background: #111;
       color: white;
     }
 
-    .contact .section-title h2 {
-      color: #9cff57;
+    .industrial-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .industrial p {
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .industrial-list {
+      list-style: none;
+    }
+
+    .industrial-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #333;
+      color: #ddd;
+    }
+
+    .industrial-list li::before {
+      content: "✓";
+      color: #62d98b;
+      margin-right: 12px;
+      font-weight: bold;
+    }
+
+    .industrial-image {
+      min-height: 400px;
+      background:
+        linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+        url("images/industrial.jpg") center/cover no-repeat;
+    }
+
+    /* =========================
+       PROJECTS
+    ========================= */
+
+    .projects {
+      background: #f7faf8;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .project-card {
+      min-height: 300px;
+      background: #ddd;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 100%;
+      min-height: 300px;
+      object-fit: cover;
+      transition: 0.5s;
+    }
+
+    .project-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .project-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 25px;
+      color: white;
+      background: linear-gradient(transparent, rgba(0,0,0,0.85));
+    }
+
+    .project-overlay h3 {
+      margin-bottom: 3px;
+    }
+
+    .project-overlay p {
+      font-size: 13px;
+      color: #ddd;
+    }
+
+    /* =========================
+       WHY US
+    ========================= */
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .why-card {
+      padding: 30px 20px;
+      text-align: center;
+      border: 1px solid #eee;
+    }
+
+    .why-card .icon {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .why-card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .why-card p {
+      font-size: 13px;
+      color: #666;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta {
+      background: #159447;
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: clamp(30px, 5vw, 48px);
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      color: #e9fff0;
+    }
+
+    .cta .btn {
+      background: white;
+      color: #159447;
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact {
+      background: #f7faf8;
     }
 
     .contact-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-      max-width: 950px;
-      margin: auto;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
     }
 
-    .contact-card {
-      background: rgba(255,255,255,.1);
-      padding: 25px;
-      border-radius: 10px;
+    .contact-item {
+      margin-bottom: 25px;
     }
 
-    .contact-card h3 {
-      color: #9cff57;
-      margin-bottom: 8px;
+    .contact-item h3 {
+      font-size: 15px;
+      color: #159447;
+      margin-bottom: 5px;
     }
 
-    .contact-card a {
-      color: white;
-      text-decoration: none;
+    .contact-item p {
+      color: #555;
     }
+
+    .contact-form {
+      background: white;
+      padding: 35px;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.06);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      font-family: inherit;
+      outline: none;
+    }
+
+    .contact-form textarea {
+      height: 130px;
+      resize: vertical;
+    }
+
+    .contact-form button {
+      width: 100%;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
-      background: #063b13;
+      background: #0b0b0b;
       color: white;
-      text-align: center;
-      padding: 25px;
+      padding: 50px 25px 25px;
+    }
+
+    .footer-grid {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 35px;
+      border-bottom: 1px solid #333;
+    }
+
+    .footer-logo {
+      font-size: 23px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .footer-logo span {
+      color: #62d98b;
+    }
+
+    footer p,
+    footer a {
+      color: #aaa;
       font-size: 14px;
     }
 
-    .floating-whatsapp {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      background: #25d366;
-      color: white;
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      font-size: 28px;
-      box-shadow: 0 4px 15px rgba(0,0,0,.3);
-      z-index: 2000;
+    footer h3 {
+      margin-bottom: 15px;
+      font-size: 16px;
     }
 
-    @media (max-width: 700px) {
-      header {
-        flex-direction: column;
-        gap: 10px;
+    .footer-links a {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 20px auto 0;
+      text-align: center;
+      color: #777;
+      font-size: 12px;
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 900px) {
+
+      nav {
+        display: none;
       }
 
-      nav a {
-        margin: 0 6px;
-        font-size: 12px;
+      .intro-grid,
+      .industrial-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      section {
+        padding: 65px 20px;
       }
 
       .hero {
-        min-height: 80vh;
+        padding: 130px 20px 70px;
+      }
+
+      .hero h1 {
+        font-size: 44px;
       }
 
       .hero p {
         font-size: 16px;
+      }
+
+      .services-grid,
+      .projects-grid,
+      .why-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .intro-box {
+        padding: 25px;
+      }
+
+      .industrial-image {
+        min-height: 280px;
       }
     }
   </style>
@@ -278,249 +619,620 @@
 
 <body>
 
-<header>
-  <div class="logo">GreenConnect <span>Electricals</span></div>
+  <!-- =========================
+       HEADER
+  ========================== -->
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <header>
+    <div class="navbar">
 
-<section class="hero" id="home">
-  <div class="hero-content">
-    <h1>Powering Your World.<br><span>Connecting Your Future.</span></h1>
+      <div>
+        <div class="logo">
+          GREEN<span>CONNECT</span>
+        </div>
 
-    <p>
-      Professional electrical installation, maintenance and technical
-      services you can trust.
-    </p>
+        <div class="tagline-small">
+          ELECTRICALS
+        </div>
+      </div>
 
-    <a href="#services" class="btn btn-primary">Our Services</a>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-btn">Contact Us</a>
+      </nav>
 
-    <a href="https://wa.me/233246771229"
-       class="btn btn-whatsapp">
-       Chat on WhatsApp
-    </a>
-  </div>
-</section>
+    </div>
+  </header>
 
-<section class="about" id="about">
 
-  <div class="section-title">
-    <h2>About GreenConnect</h2>
-    <p>Professional. Reliable. Connected.</p>
-  </div>
+  <!-- =========================
+       HERO
+  ========================== -->
 
-  <div class="about-content">
-    <p>
-      <strong>GreenConnect Electricals</strong> provides professional
-      electrical and technical solutions for homes, businesses and
-      industrial clients.
-    </p>
+  <section class="hero" id="home">
 
-    <br>
+    <div class="hero-content">
 
-    <p>
-      From electrical installations and troubleshooting to electric fencing,
-      generator services, satellite installations and air-conditioning
-      solutions, we are committed to delivering safe, reliable and quality
-      workmanship.
-    </p>
-  </div>
+      <div class="hero-label">
+        Professional Electrical Solutions
+      </div>
 
-</section>
+      <h1>
+        Connecting You to <span>Quality.</span>
+      </h1>
 
-<section class="services" id="services">
-
-  <div class="section-title">
-    <h2>Our Services</h2>
-    <p>Reliable technical solutions for your electrical needs.</p>
-  </div>
-
-  <div class="service-grid">
-
-    <div class="service-card">
-      <div class="service-icon">⚡</div>
-      <h3>Electrical Installation</h3>
       <p>
-        House wiring, commercial installations, electrical extensions,
-        lighting and power installations.
+        Reliable electrical solutions for homes, businesses,
+        industries and modern infrastructure. From installations
+        to equipment supply, GreenConnect Electricals delivers
+        solutions built around quality, safety and reliability.
       </p>
-    </div>
 
-    <div class="service-card">
-      <div class="service-icon">🔧</div>
-      <h3>Electrical Repairs</h3>
-      <p>
-        Fault finding, troubleshooting, repairs and preventive electrical
-        maintenance.
-      </p>
-    </div>
+      <div class="hero-buttons">
 
-    <div class="service-card">
-      <div class="service-icon">🛡️</div>
-      <h3>Electric Fencing</h3>
-      <p>
-        Installation and maintenance of electric security fencing systems.
-      </p>
-    </div>
-
-    <div class="service-card">
-      <div class="service-icon">⚙️</div>
-      <h3>Generator Services</h3>
-      <p>
-        Generator installation, electrical connections, maintenance and
-        troubleshooting.
-      </p>
-    </div>
-
-    <div class="service-card">
-      <div class="service-icon">📺</div>
-      <h3>Satellite Installation</h3>
-      <p>
-        Satellite dish installation, alignment and television signal
-        troubleshooting.
-      </p>
-    </div>
-
-    <div class="service-card">
-      <div class="service-icon">❄️</div>
-      <h3>Air Conditioning</h3>
-      <p>
-        Air-conditioner installation, electrical connections and servicing.
-      </p>
-    </div>
-
-    <div class="service-card">
-      <div class="service-icon">🏠</div>
-      <h3>Home Electrical Services</h3>
-      <p>
-        Electrical upgrades, lighting solutions, socket installation and
-        household electrical repairs.
-      </p>
-    </div>
-
-    <div class="service-card">
-      <div class="service-icon">🏭</div>
-      <h3>Industrial Electrical Services</h3>
-      <p>
-        Electrical support, equipment installation, maintenance and
-        troubleshooting for industrial applications.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-<section class="why">
-
-  <div class="section-title">
-    <h2>Why Choose Us?</h2>
-    <p>Quality service with safety at the centre.</p>
-  </div>
-
-  <div class="why-grid">
-
-    <div class="why-card">
-      <div class="service-icon">✅</div>
-      <h3>Quality Work</h3>
-      <p>We focus on professional workmanship and dependable solutions.</p>
-    </div>
-
-    <div class="why-card">
-      <div class="service-icon">🛠️</div>
-      <h3>Technical Expertise</h3>
-      <p>Practical technical experience across electrical and industrial systems.</p>
-    </div>
-
-    <div class="why-card">
-      <div class="service-icon">🔒</div>
-      <h3>Safety First</h3>
-      <p>Safety is considered throughout our installation and maintenance work.</p>
-    </div>
-
-    <div class="why-card">
-      <div class="service-icon">🤝</div>
-      <h3>Customer Focused</h3>
-      <p>We listen to our customers and work towards practical solutions.</p>
-    </div>
-
-  </div>
-
-</section>
-
-<section class="contact" id="contact">
-
-  <div class="section-title">
-    <h2>Contact Us</h2>
-    <p>Let's discuss your electrical project.</p>
-  </div>
-
-  <div class="contact-grid">
-
-    <div class="contact-card">
-      <h3>📞 Call Us</h3>
-      <p>
-        <a href="tel:0246771229">024 677 1229</a><br>
-        <a href="tel:0507125997">050 712 5997</a>
-      </p>
-    </div>
-
-    <div class="contact-card">
-      <h3>💬 WhatsApp</h3>
-      <p>
-        <a href="https://wa.me/233246771229">
-          Chat with us on WhatsApp
+        <a href="#contact" class="btn btn-primary">
+          Get a Quote
         </a>
-      </p>
+
+        <a href="#services" class="btn btn-outline">
+          Explore Services
+        </a>
+
+      </div>
+
     </div>
 
-    <div class="contact-card">
-      <h3>📧 Email</h3>
+  </section>
+
+
+  <!-- =========================
+       ABOUT / INTRO
+  ========================== -->
+
+  <section class="intro" id="about">
+
+    <div class="container intro-grid">
+
+      <div class="intro-text">
+
+        <div class="section-label">
+          About GreenConnect
+        </div>
+
+        <h2 class="section-title">
+          Electrical solutions you can depend on.
+        </h2>
+
+        <p>
+          GreenConnect Electricals is a professional electrical
+          solutions company committed to providing dependable,
+          quality-driven and safety-focused services.
+        </p>
+
+        <p>
+          Our services cover residential, commercial and industrial
+          electrical needs, from installations and maintenance to
+          security systems, power solutions and equipment supply.
+        </p>
+
+      </div>
+
+      <div class="intro-box">
+
+        <h3>
+          Our Commitment
+        </h3>
+
+        <p>
+          We believe quality electrical work should not only solve
+          today's problem but provide a dependable foundation for
+          tomorrow.
+        </p>
+
+        <br>
+
+        <strong>
+          Quality • Safety • Reliability
+        </strong>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SERVICES
+  ========================== -->
+
+  <section class="services" id="services">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          What We Do
+        </div>
+
+        <h2 class="section-title">
+          Our Professional Services
+        </h2>
+
+        <p>
+          From everyday electrical needs to industrial power
+          solutions, we provide practical and professional services.
+        </p>
+
+      </div>
+
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-number">01</div>
+          <h3>General Electrical Wiring</h3>
+          <p>
+            Professional electrical wiring, installations,
+            repairs and troubleshooting for residential and
+            commercial properties.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-number">02</div>
+          <h3>AC Installation & Servicing</h3>
+          <p>
+            Air-conditioning installation, servicing and
+            maintenance for comfortable and efficient spaces.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-number">03</div>
+          <h3>Electric Fencing</h3>
+          <p>
+            Reliable electric fencing solutions designed to
+            improve property security.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-number">04</div>
+          <h3>Satellite Installation</h3>
+          <p>
+            Multi-TV and DStv satellite installation and
+            distribution solutions.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-number">05</div>
+          <h3>Industrial Generators</h3>
+          <p>
+            Supply and support for industrial generator systems
+            and dependable backup power solutions.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-number">06</div>
+          <h3>Electrical Panels & ATS</h3>
+          <p>
+            Supply and installation of electrical panels,
+            changeover systems and automatic transfer solutions.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       INDUSTRIAL SOLUTIONS
+  ========================== -->
+
+  <section class="industrial">
+
+    <div class="container industrial-grid">
+
+      <div>
+
+        <div class="section-label">
+          Industrial Solutions
+        </div>
+
+        <h2 class="section-title">
+          Powering businesses beyond the ordinary.
+        </h2>
+
+        <p>
+          GreenConnect Electricals is expanding beyond conventional
+          electrical services into dependable industrial power and
+          electrical equipment solutions.
+        </p>
+
+        <ul class="industrial-list">
+
+          <li>Industrial Generator Supply</li>
+          <li>Automatic Transfer Switches</li>
+          <li>Electrical Distribution Panels</li>
+          <li>Manual & Automatic Changeover Systems</li>
+          <li>Electrical Equipment Supply</li>
+
+        </ul>
+
+      </div>
+
+      <div class="industrial-image"></div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       PROJECTS
+  ========================== -->
+
+  <section class="projects" id="projects">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          Our Work
+        </div>
+
+        <h2 class="section-title">
+          Featured Projects
+        </h2>
+
+        <p>
+          A selection of our electrical installations, security
+          systems and power solutions.
+        </p>
+
+      </div>
+
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+
+          <img src="images/project-1.jpg" alt="GreenConnect Electricals project">
+
+          <div class="project-overlay">
+            <h3>Electrical Installation</h3>
+            <p>Professional electrical works</p>
+          </div>
+
+        </div>
+
+
+        <div class="project-card">
+
+          <img src="images/project-2.jpg" alt="GreenConnect Electricals project">
+
+          <div class="project-overlay">
+            <h3>Electric Fencing</h3>
+            <p>Property security solution</p>
+          </div>
+
+        </div>
+
+
+        <div class="project-card">
+
+          <img src="images/project-3.jpg" alt="GreenConnect Electricals project">
+
+          <div class="project-overlay">
+            <h3>Industrial Power</h3>
+            <p>Power and electrical solutions</p>
+          </div>
+
+        </div>
+
+
+        <div class="project-card">
+
+          <img src="images/project-4.jpg" alt="GreenConnect Electricals project">
+
+          <div class="project-overlay">
+            <h3>Electrical Panels</h3>
+            <p>Distribution and control systems</p>
+          </div>
+
+        </div>
+
+
+        <div class="project-card">
+
+          <img src="images/project-5.jpg" alt="GreenConnect Electricals project">
+
+          <div class="project-overlay">
+            <h3>Air Conditioning</h3>
+            <p>Installation and servicing</p>
+          </div>
+
+        </div>
+
+
+        <div class="project-card">
+
+          <img src="images/project-6.jpg" alt="GreenConnect Electricals project">
+
+          <div class="project-overlay">
+            <h3>Power Solutions</h3>
+            <p>Reliable electrical infrastructure</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       WHY CHOOSE US
+  ========================== -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          Why GreenConnect
+        </div>
+
+        <h2 class="section-title">
+          Built around what matters.
+        </h2>
+
+      </div>
+
+
+      <div class="why-grid">
+
+        <div class="why-card">
+          <div class="icon">⚡</div>
+          <h3>Quality</h3>
+          <p>
+            We focus on quality workmanship and dependable
+            electrical solutions.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="icon">🛡️</div>
+          <h3>Safety</h3>
+          <p>
+            Safety remains a fundamental part of every project
+            we undertake.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="icon">🔧</div>
+          <h3>Professionalism</h3>
+          <p>
+            We approach every project with attention to detail
+            and professional standards.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="icon">🤝</div>
+          <h3>Reliability</h3>
+          <p>
+            Our goal is to provide solutions our customers can
+            confidently depend on.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CTA
+  ========================== -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>
+        Need a reliable electrical solution?
+      </h2>
+
       <p>
-        <a href="mailto:infogreenconnect.electrical@gmail.com">
+        Whether it's your home, business or industrial project,
+        GreenConnect Electricals is ready to connect you to quality.
+      </p>
+
+      <a href="#contact" class="btn">
+        Talk to Us
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CONTACT
+  ========================== -->
+
+  <section class="contact" id="contact">
+
+    <div class="container contact-grid">
+
+      <div>
+
+        <div class="section-label">
+          Get In Touch
+        </div>
+
+        <h2 class="section-title">
+          Let's discuss your project.
+        </h2>
+
+        <p>
+          Tell us what you need and we'll be happy to discuss
+          the right electrical solution for you.
+        </p>
+
+        <br>
+
+        <div class="contact-item">
+          <h3>LOCATION</h3>
+          <p>Sunyani, Bono Region, Ghana</p>
+        </div>
+
+        <div class="contact-item">
+          <h3>EMAIL</h3>
+          <p>infogreenconnect.electrical@gmail.com</p>
+        </div>
+
+        <div class="contact-item">
+          <h3>BUSINESS</h3>
+          <p>GREENCONNECT ELECTRICALS</p>
+        </div>
+
+      </div>
+
+
+      <div class="contact-form">
+
+        <form action="mailto:infogreenconnect.electrical@gmail.com"
+              method="post"
+              enctype="text/plain">
+
+          <input
+            type="text"
+            name="Name"
+            placeholder="Your Name"
+            required
+          >
+
+          <input
+            type="email"
+            name="Email"
+            placeholder="Your Email"
+            required
+          >
+
+          <input
+            type="text"
+            name="Phone"
+            placeholder="Phone / WhatsApp"
+          >
+
+          <textarea
+            name="Message"
+            placeholder="Tell us about your project..."
+            required
+          ></textarea>
+
+          <button
+            type="submit"
+            class="btn btn-primary">
+            Send Enquiry
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="footer-grid">
+
+      <div>
+
+        <div class="footer-logo">
+          GREEN<span>CONNECT</span> ELECTRICALS
+        </div>
+
+        <p>
+          Connecting You to Quality.
+        </p>
+
+        <br>
+
+        <p>
+          Professional electrical, power and security solutions
+          for homes, businesses and industries.
+        </p>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <h3>Quick Links</h3>
+
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+
+      </div>
+
+
+      <div>
+
+        <h3>Contact</h3>
+
+        <p>Sunyani, Bono Region, Ghana</p>
+
+        <br>
+
+        <p>
           infogreenconnect.electrical@gmail.com
-        </a>
-      </p>
+        </p>
+
+      </div>
+
     </div>
 
-    <div class="contact-card">
-      <h3>📍 Location</h3>
-      <p>Sunyani, Bono Region, Ghana</p>
+
+    <div class="footer-bottom">
+
+      © 2026 GreenConnect Electricals.
+      All Rights Reserved.
+
     </div>
 
-  </div>
-
-  <div style="text-align:center; margin-top:35px;">
-    <a href="https://wa.me/233246771229"
-       class="btn btn-whatsapp">
-       💬 Get a Free Consultation
-    </a>
-  </div>
-
-</section>
-
-<footer>
-
-  <p>
-    © 2026 GreenConnect Electricals. All Rights Reserved.
-  </p>
-
-  <p style="margin-top:8px;">
-    Professional Electrical & Technical Services
-  </p>
-
-</footer>
-
-<a href="https://wa.me/233246771229"
-   class="floating-whatsapp"
-   aria-label="Chat on WhatsApp">
-   💬
-</a>
+  </footer>
 
 </body>
-        </html>
+</html>
